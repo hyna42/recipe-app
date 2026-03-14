@@ -5,6 +5,11 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
+  image: {
+    domains: ['https://cdn.dummyjson.com']
+  },
+  
+
   // experimental: {
   //   compileTemplate: true,
   //   templateUtils: true,
@@ -32,10 +37,13 @@ export default defineNuxtConfig({
     '@nuxt/image',
   ],
 
-   googleFonts: {
-     // Options
-     families: {
-       Montserrat:true,
-     }
-  }
+  googleFonts: {
+    // Options
+    families: {
+      Montserrat: true,
+    }
+  },
+
+
 })
+
