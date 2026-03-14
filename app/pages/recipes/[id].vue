@@ -3,13 +3,6 @@ import type { Recipe } from "~/types/types";
 
 const { id } = useRoute().params;
 const { data, error } = useFetch<Recipe>(`https://dummyjson.com/recipes/${id}`);
-
-if (error.value) {
-  throw createError({
-    statusCode: error.value?.statusCode,
-    statusMessage: error.value?.statusMessage,
-  });
-}
 </script>
 
 <template>
