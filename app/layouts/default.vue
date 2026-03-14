@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 <template>
   <div>
-    <p>Default Layout</p>
+    <BaseNavigation />
     <slot></slot>
   </div>
 </template>
