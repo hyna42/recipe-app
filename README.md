@@ -1,75 +1,59 @@
-# Nuxt Minimal Starter
+# Nuxtcipes
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A modern recipe app built with Nuxt 4, Vue 3, and TypeScript. Browse recipes, view details, and get cooking instructions.
 
-## Setup
+## Features
 
-Make sure to install dependencies:
+- Browse recipe collection with card layouts
+- View detailed recipes (ingredients, instructions, cook time, calories, ratings)
+- Responsive design with Tailwind CSS
+- SEO optimized with server-side rendering
+- TypeScript support for type safety
+
+## Tech Stack
+
+Nuxt 4, Vue 3, TypeScript, Tailwind CSS, Nuxt Icon, Nuxt Image, Google Fonts
+
+## Project Structure
+
+```
+recipe-app/
+├── app/
+│   ├── components/     # Reusable components
+│   ├── layouts/        # Page layouts
+│   ├── pages/          # Application pages
+│   └── types/          # TypeScript definitions
+├── public/             # Static assets
+├── server/             # Server-side code
+├── nuxt.config.ts      # Nuxt configuration
+├── package.json        # Dependencies and scripts
+├── tailwind.config.ts  # Tailwind configuration
+└── tsconfig.json       # TypeScript configuration
+```
+
+## Installation
 
 ```bash
-# npm
+git clone <repository-url>
+cd recipe-app
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+## Development
 
-Start the development server on `http://localhost:3000`:
+Start development server:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+Build for production:
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## API
+
+Uses [DummyJSON Recipes API](https://dummyjson.com/docs/recipes) for recipe data.
